@@ -73,7 +73,7 @@ public class ContatoDao {
 		String sql = "update agenda_contatos set nome=?, email=?, endereco=?, dataNascimento=? where id=?";
 	
 		try {
-			PreparedStatement stmt = connection.prepareStatement(sql);
+			java.sql.PreparedStatement stmt = connection.prepareStatement(sql);
 			stmt.setString(1, contato.getNome());
 			stmt.setString(2, contato.getEmail());
 			stmt.setString(3, contato.getEndereco());

@@ -6,7 +6,7 @@ import agenda.exception.DaoException;
 import agenda.jdbc.dao.ContatoDao;
 import agenda.jdbc.modelo.Contato;
 
-public class TestaLista {
+public class TestaListaContato {
 
 	public static void main(String[] args) throws ClassNotFoundException, DaoException {
 
@@ -20,7 +20,7 @@ public class TestaLista {
 			System.out.println("E-mail: " + contato.getEmail());
 			System.out.println("Endereço: " + contato.getEndereco());
 			System.out.println("Data de Nascimento: " + contato.getDataNascimento().getTime());
-			System.err.println("*******************************");
+			System.out.println("*******************************");
 		}
 
 		
